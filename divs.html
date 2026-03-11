@@ -32,7 +32,9 @@
 	<h2>Juvaan Sabaroche Builds Lists with Divs</h2>
 
 	<input type="text" id="inputItem" placeholder="Enter item">
-	<button onclick="makeNewDiv()">Add end</button>
+	<button onclick="addFront()">Add Front</button>
+	<button onclick="makeNewDiv()">Add End</button>
+	<button onclick="remove()">Remove</button>
 
 	<div class="flex-container" id="target">
 		<div class="divlist">row item 1</div>
@@ -53,8 +55,28 @@
 		/* add it to the container */
 		let container = document.getElementById('target')
 		container.appendChild(element)
-
 	}
+	function remove() {
+		let divListItems = document.getElementsByClassName("divlist");
+
+		if (divListItems.length > 1) {
+			divListItems[1].remove();
+		} else if (divListItems.length == 1) {
+			divListItems[0].remove();
+		}
+	}
+
+	function addFront() {
+		/* make the div and its text */
+		let element = document.createElement("div")
+		element.innerHTML = document.getElementById("inputItem").value;
+		element.className = "divlist";
+
+		/* add it to the container */
+		let container = document.getElementById('target')
+		container.insertBefore(element, container.firstChild);
+	}
+
 </script>
 
 </html>
