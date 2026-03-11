@@ -23,7 +23,7 @@
     <div class="row">
       <div class="col-sm-2" id="locations" style="background-color:lavender;">Number of locations checked is zero</div>
       <div class="col-md-3" id="score" style="background-color:lavenderblush;">Score is zero</div>
-      <div class="col-sm-2" style="background-color:lavender;">Click for help</div>
+      <div class="col-sm-2" style="background-color:lavender;" onclick="help()">Click for help</div>
       <div class="col-sm-5" id="help" style="background-color:lavenderblush;">Help report</div>
     </div>
   </div>
@@ -31,56 +31,165 @@
   <div class="container-fluid mt-3">
 
     <div class="row">
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
+      <div class="col"><img src="bush.jpg" id = "img0" width="80" height="80" onclick="check(0)"></div>
+      <div class="col"><img src="bush.jpg" id = "img1" width="80" height="80" onclick="check(1)"></div>
+      <div class="col"><img src="bush.jpg" id = "img2" width="80" height="80" onclick="check(2)"></div>
+      <div class="col"><img src="bush.jpg" id = "img3" width="80" height="80" onclick="check(3)"></div>
+      <div class="col"><img src="bush.jpg" id = "img4" width="80" height="80" onclick="check(4)"></div>
+      <div class="col"><img src="bush.jpg" id = "img5" width="80" height="80" onclick="check(5)"></div>
+      <div class="col"><img src="bush.jpg" id = "img6" width="80" height="80" onclick="check(6)"></div>
     </div>
 
     <div class="row">
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
+      <div class="col"><img src="bush.jpg" id = "img7" width="80" height="80" onclick="check(7)"></div>
+      <div class="col"><img src="bush.jpg" id = "img8" width="80" height="80" onclick="check(8)"></div>
+      <div class="col"><img src="bush.jpg" id = "img9" width="80" height="80" onclick="check(9)"></div>
+      <div class="col"><img src="bush.jpg" id = "img10" width="80" height="80" onclick="check(10)"></div>
+      <div class="col"><img src="bush.jpg" id = "img11" width="80" height="80" onclick="check(11)"></div>
+      <div class="col"><img src="bush.jpg" id = "img12" width="80" height="80" onclick="check(12)"></div>
+      <div class="col"><img src="bush.jpg" id = "img13" width="80" height="80" onclick="check(13)"></div>
     </div>
 
     <div class="row">
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
+      <div class="col"><img src="bush.jpg" id = "img14" width="80" height="80" onclick="check(14)"></div>
+      <div class="col"><img src="bush.jpg" id = "img15" width="80" height="80" onclick="check(15)"></div>
+      <div class="col"><img src="bush.jpg" id = "img16" width="80" height="80" onclick="check(16)"></div>
+      <div class="col"><img src="bush.jpg" id = "img17" width="80" height="80" onclick="check(17)"></div>
+      <div class="col"><img src="bush.jpg" id = "img18" width="80" height="80" onclick="check(18)"></div>
+      <div class="col"><img src="bush.jpg" id = "img19" width="80" height="80" onclick="check(19)"></div>
+      <div class="col"><img src="bush.jpg" id = "img20" width="80" height="80" onclick="check(20)"></div>
     </div>
 
     <div class="row">
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
+      <div class="col"><img src="bush.jpg" id = "img21" width="80" height="80" onclick="check(21)"></div>
+      <div class="col"><img src="bush.jpg" id = "img22" width="80" height="80" onclick="check(22)"></div>
+      <div class="col"><img src="bush.jpg" id = "img23" width="80" height="80" onclick="check(23)"></div>
+      <div class="col"><img src="bush.jpg" id = "img24" width="80" height="80" onclick="check(24)"></div>
+      <div class="col"><img src="bush.jpg" id = "img25" width="80" height="80" onclick="check(25)"></div>
+      <div class="col"><img src="bush.jpg" id = "img26" width="80" height="80" onclick="check(26)"></div>
+      <div class="col"><img src="bush.jpg" id = "img27" width="80" height="80" onclick="check(27)"></div>
     </div>
 
     <div class="row">
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
-      <div class="col"><img src="bush.jpg" width="80" height="80"></div>
+      <div class="col"><img src="bush.jpg" id = "img28" width="80" height="80" onclick="check(28)"></div>
+      <div class="col"><img src="bush.jpg" id = "img29" width="80" height="80" onclick="check(29)"></div>
+      <div class="col"><img src="bush.jpg" id = "img30" width="80" height="80" onclick="check(30)"></div>
+      <div class="col"><img src="bush.jpg" id = "img31" width="80" height="80" onclick="check(31)"></div>
+      <div class="col"><img src="bush.jpg" id = "img32" width="80" height="80" onclick="check(32)"></div>
+      <div class="col"><img src="bush.jpg" id = "img33" width="80" height="80" onclick="check(33)"></div>
+      <div class="col"><img src="bush.jpg" id = "img34" width="80" height="80" onclick="check(34)"></div>
     </div>
 
   </div>
+
+  <script>
+
+    var ids = ["img0", "img1", "img2", "img3", "img4", "img5", "img6", "img7", "img8", "img9", "img10", "img11", "img12",
+               "img13", "img14", "img15", "img16", "img17", "img18", "img19", "img20", "img21", "img22", "img23", "img24",
+               "img25", "img26", "img27", "img28", "img29", "img30", "img31", "img32", "img33", "img34"];
+
+    var score = 0;
+    var locationsVisited = 0;
+    var lastLocation = 0;
+    var statueLocation = 19;
+    var toucanLocation = 14;
+    var lorikeetLocations = [3, 25];
+    var buntingLocations = [2 , 5, 11, 20, 21];
+    var gameOver = false;
+
+    function check(position) {
+      // Your check function implementation
+      if (gameOver) {
+          return;
+      }
+       var imgId = ids[position];                    
+      var imgEl = document.getElementById(imgId);
+
+      if (position === statueLocation) {
+        imgEl.src     = "statue.jpg";
+        imgEl.onclick = null;
+        score        -= 3;
+        gameOver      = true;
+
+      } else if (position === toucanLocation) {
+        imgEl.src     = "toucan.jpg";
+        imgEl.onclick = null; 
+        score        += 5;
+
+      } else if (lorikeetLocations.includes(position)) {
+        imgEl.src     = "lorikeet.jpg";
+        imgEl.onclick = null;
+        score        += 3;
+
+      } else if (buntingLocations.includes(position)) {
+        imgEl.src     = "bunting.jpg";
+        imgEl.onclick = null;
+        score        += 1;
+      }
+
+      locationsVisited += 1;
+      lastLocation = position;
+
+      document.getElementById("locations").innerHTML = "Locations checked: " + locationsVisited;
+      document.getElementById("score").innerHTML     = "Score: " + score;
+
+    }
+
+    function help() {
+      var result = "silence";
+
+      var buntingNeighbors = [
+        (lastLocation - 1 + 35) % 35,
+        (lastLocation + 1)      % 35,
+        (lastLocation - 7 + 35) % 35,
+        (lastLocation + 7)      % 35
+      ];
+      for (var i = 0; i < buntingNeighbors.length; i++) {
+        if (buntingLocations.includes(buntingNeighbors[i])) {
+          result = "cheep";
+          break;
+        }
+      }
+
+      if (result === "silence") {
+        var lastRow = Math.floor(lastLocation / 7);
+        var lastCol = lastLocation % 7;
+        outerLoop:
+        for (var dr = -1; dr <= 1; dr++) {
+          for (var dc = -1; dc <= 1; dc++) {
+            var r = lastRow + dr;
+            var c = lastCol + dc;
+            if (r >= 0 && r < 5 && c >= 0 && c < 7) {
+              if ((r * 7 + c) === toucanLocation) {
+                result = "caw";
+                break outerLoop;
+              }
+            }
+          }
+        }
+      }
+
+      if (result === "silence") {
+        var lastRow = Math.floor(lastLocation / 7);
+        var lastCol = lastLocation % 7;
+        outerLoop2:
+        for (var dr = -1; dr <= 1; dr++) {
+          for (var dc = -1; dc <= 1; dc++) {
+            var r = lastRow + dr;
+            var c = lastCol + dc;
+            if (r >= 0 && r < 5 && c >= 0 && c < 7) {
+              if ((r * 7 + c) === statueLocation) {
+                result = "thrrum";
+                break outerLoop2;
+              }
+            }
+          }
+        }
+      }
+
+      document.getElementById("help").innerHTML = "Help: " + result;
+    }
+  </script>
 
 </body>
 </html>
