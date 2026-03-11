@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>A7 Divs</title>
+	<style>
+		.flex-container {
+			display: flex;
+			flex-direction: row;
+			background-color: red;
+		}
+
+		.flex-container>div {
+			/*div children of the flex container*/
+			background-color: #f1f1f1;
+			margin: 10px;
+			padding: 20px;
+			font-size: 30px;
+		}
+
+		/* Responsive layout */
+		@media (max-width: 600px) {
+			.flex-container {
+				flex-direction: column;
+				background-color: green;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<h2>Juvaan Sabaroche Builds Lists with Divs</h2>
+
+	<input type="text" id="inputItem" placeholder="Enter item">
+	<button onclick="makeNewDiv()">Add end</button>
+
+	<div class="flex-container" id="target">
+		<div class="divlist">row item 1</div>
+		<div class="divlist">row item 2</div>
+		<div class="divlist">row item 3</div>
+	</div>
+
+
+
+</body>
+<script>
+	function makeNewDiv() {
+		/* make the div and its text */
+		let element = document.createElement("div")
+		element.innerHTML = document.getElementById("inputItem").value;
+		element.className = "divlist";
+
+		/* add it to the container */
+		let container = document.getElementById('target')
+		container.appendChild(element)
+
+	}
+</script>
+
+</html>
